@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <script src="script.js"></script>
+
+        <title>Weather Forecast</title>
+    </head>
+    <body onload="DefaultScreen()">
+        <div class="container">
+            <h1 class="text-center mt-5">Weather Forecast for 5 Days</h1>
+
+            <section id="weather-form" class="text-center mt-5 mb-4">
+                <div class="row justify-content-center">
+                    <input
+                        type="text"
+                        class="form-control col-md-4 col-10 mt-2 mb-2"
+                        id="cityInput"
+                        placeholder="City Name"
+                    />
+                    <div class="col-md-2 col-10 w-25 pt-2 pb-2">
+                        <button
+                            id="searchButton"
+                            class="btn btn-success btn-block"
+                            onclick="GetWeather()"
+                        >
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="weather-forcast">
+                <h2 class="text-center mb-3" id="cityName"></h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="day1"></h5>
+                                <p class="card-text" id="day1Min"></p>
+                                <p class="card-text" id="day1Max"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="day2"></h5>
+                                <p class="card-text" id="day2Min"></p>
+                                <p class="card-text" id="day2Max"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="day3"></h5>
+                                <p class="card-text" id="day3Min"></p>
+                                <p class="card-text" id="day3Max"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="day4"></h5>
+                                <p class="card-text" id="day4Min"></p>
+                                <p class="card-text" id="day4Max"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="day5"></h5>
+                                <p class="card-text" id="day5Min"></p>
+                                <p class="card-text" id="day5Max"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
